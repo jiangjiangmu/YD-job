@@ -1,0 +1,10 @@
+# 隐私与体积闸门：以下三项绝不入库
+.venv/
+data/
+config.yaml
+
+# 杂项
+__pycache__/
+*.pyc
+*.pyo
+.pip-tmp/

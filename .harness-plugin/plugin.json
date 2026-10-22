@@ -1,0 +1,6 @@
+{
+  "name": "yd-job",
+  "version": "1.0.0",
+  "description": "YD-job: Industrial-grade multi-source job search and automation hub",
+  "main": "scripts/analyzer_engine.py"
+}
