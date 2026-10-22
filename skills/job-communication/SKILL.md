@@ -22,7 +22,7 @@ description: Use when the user invokes $yd-job communicate, needs outreach messa
 2. 按 communication-templates §2 生成三段式话术（点名岗位+公司、真实技能、≤120 字）
 3. 证据分级检查：话术中每项主张必须是 `U`（用户确认）或 `R`（简历来源）；`N` 级禁止出现
 4. 检查无【】占位符残留后交付用户手动复制
-5. 用户发送后，经用户确认更新 `投递追踪.md`：岗位/公司/薪资/渠道/匹配得分/状态/沟通记录
+5. 用户发送后，经用户确认更新 `投递追踪.md`（可直接用 `scripts/tracker_sync.py`）：岗位/公司/薪资/渠道/匹配得分/状态/沟通记录
 
 ## 输出边界
 

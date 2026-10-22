@@ -40,6 +40,12 @@ YD-job/
     └── test_delivery_validation.py # 报表结构/表头/行数/链接/底色 冒烟
 ```
 
+## 安装依赖
+
+```powershell
+pip install -r requirements.txt
+```
+
 ## 使用流程
 
 ```powershell
@@ -58,6 +64,18 @@ cd E:\AI\DeepSeek Harness\Vault\desktop\projects\YD-job
 .venv\Scripts\python.exe tests\test_contracts.py
 .venv\Scripts\python.exe tests\test_scoring.py
 .venv\Scripts\python.exe tests\test_delivery_validation.py
+```
+
+## 投递追踪（CRM）
+
+```powershell
+# 新增投递记录（默认状态：待沟通）
+.venv\Scripts\python.exe scripts\tracker_sync.py add --job "IT运维工程师" --company "某某科技" --salary "9-11K" --channel "BOSS直聘" --score 70.7
+# 推进状态（用户确认后）
+.venv\Scripts\python.exe scripts\tracker_sync.py status --company "某某科技" --to "已打招呼"
+# 列表 / 统计
+.venv\Scripts\python.exe scripts\tracker_sync.py list
+.venv\Scripts\python.exe scripts\tracker_sync.py stats
 ```
 
 ## 红线
