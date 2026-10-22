@@ -1,26 +1,28 @@
-# YD-job 配置模板（示例值）——复制为 config.yaml 后改成你自己的真实画像
-#                     ↑ 真实 config.yaml 已被 .gitignore 排除，不会入库
+# YD-job Configuration Template (example values) — copy to config.yaml and edit with your real profile
+# YD-job 配置模板（示例值）——复制为 config.yaml 后修改为你的真实画像
+# NOTE / 注意: the real config.yaml is excluded by .gitignore and never committed / 真实 config.yaml 已被 .gitignore 排除，不会入库
 
 search:
-  keywords: ["运维", "IT支持", "技术支持"]    # 搜索关键词（多关键词合并采集）
-  city_code: "101280600"                     # 城市编码（深圳；北京 101010100 / 上海 101020100 / 广州 101280100 / 杭州 101210100）
-  pages: 2                                   # 每个关键词抓取页数（每页 30 条）
-  page_size: 30
+  keywords: ["运维", "IT支持", "技术支持"]    # Search keywords (multi-keyword merged collection) / 搜索关键词（多关键词合并采集）
+  city_code: "101280600"                     # City code — Shenzhen; Beijing 101010100 / Shanghai 101020100 / Guangzhou 101280100 / Hangzhou 101210100 / 城市编码（深圳）
+  pages: 2                                   # Pages per keyword (30 jobs per page) / 每个关键词抓取页数（每页 30 条）
+  page_size: 30                              # Jobs per page / 每页条数
 
 browser:
-  remote_debugging_port: 9222                # 复用本地已登录浏览器的 Chrome 调试端口
+  remote_debugging_port: 9222                # Reuse local logged-in browser via Chrome debug port / 复用本地已登录浏览器的 Chrome 调试端口
 
 spider:
-  min_delay_seconds: 10                      # 请求间隔下限（防风控，请勿调小）
-  max_delay_seconds: 18                      # 请求间隔上限
-  navigate_settle_seconds: 6                 # 导航到搜索页后的稳定等待秒数
+  min_delay_seconds: 10                      # Min request spacing (risk-control; do NOT lower) / 请求间隔下限（防风控，请勿调小）
+  max_delay_seconds: 18                      # Max request spacing / 请求间隔上限
+  navigate_settle_seconds: 6                 # Settle wait after navigating to the search page / 导航到搜索页后的稳定等待秒数
 
 profile:
-  skills: ["示例技能A", "示例技能B", "Python", "Linux"]  # 你的核心技能栈（打分命中依据）
-  experience_years: 3                        # 工作年限
-  expected_salary: "8K-12K"                  # 期望薪资
-  own_degree: "大专"                         # 学历：博士/硕士/本科/大专/中专/高中/学历不限
-  preferred_regions: ["南山区", "福田区"]     # 偏好工作区域
-  excluded_keywords: ["外包", "驻场"]         # 排除词（岗位名命中每项 -20 分）
-  exclude_part_time: true                    # 兼职/实习不参与打分，单独归附表
-  notes: "示例：3 年运维经验，Python 自动化为转型加分项"
+  skills: ["示例技能A", "示例技能B", "Python", "Linux"]  # Core skill stack (scoring match basis) / 核心技能栈（打分命中依据）
+  experience_years: 3                        # Years of experience / 工作年限
+  expected_salary: "8K-12K"                  # Expected salary / 期望薪资
+  own_degree: "大专"                         # Degree: 博士/硕士/本科/大专/中专/高中/学历不限 (Doctor/Master/Bachelor/Associate/...) / 学历
+  preferred_regions: ["南山区", "福田区"]     # Preferred districts / 偏好工作区域
+  excluded_keywords: ["外包", "驻场"]         # Excluded keywords (−20 each when hit in job title) / 排除词（岗位名命中每项 -20 分）
+  exclude_part_time: true                    # Part-time/internship excluded from scoring (separate sheet) / 兼职/实习不参与打分，单独归附表
+  # Personal narrative (not scored) / 个人叙事备注（不参与打分）
+  notes: "Example: 3 yrs ops experience, Python automation as a plus / 示例：3 年运维经验，Python 自动化为转型加分项"
