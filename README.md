@@ -32,10 +32,8 @@ YD-job/
 │   ├── spider_zhipin.py          # BOSS直聘 CDP 采集（生产）
 │   ├── analyzer_engine.py        # 五维打分 + 26列 Excel 报表（生产）
 │   ├── tracker_sync.py           # 投递漏斗 CRM 状态机
-│   ├── probe_wapi.py             # 平台接口探测（排障）
 │   ├── parse_resume.py           # 简历 docx 解析（画像来源）
-│   ├── inspect_cdp.py            # 9222 标签页检查（排障）
-│   └── scrape_v2ex_real.py       # V2EX CDP 探测（V2EX 通道未启用）
+│   └── inspect_cdp.py            # 9222 标签页检查（排障）
 ├── data/                         # 运行态数据（不入库：含平台鉴权字段与个人数据）
 └── tests/                        # 测试锁（venv 直接运行，无需 pytest）
     ├── test_contracts.py         # 配置/数据 schema/契约文件存在性

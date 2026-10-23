@@ -30,6 +30,18 @@
 - Added `tests/test_tracker.py`: CRM read/write + state machine unit tests
 - Added `requirements.txt` and this CHANGELOG; README now covers dependency install & CRM usage
 
+## 仓库整理 / Repository cleanup - 2026-10-23（版本号不变 / version unchanged）
+
+**中文**
+- 新增 `LICENSE`（MIT）：此前仓库未声明协议，GitHub 显示 All rights reserved，现已明确开源授权
+- 移除 5 个早期 V2EX 试验脚本（`probe_wapi.py`、`scrape_v2ex_real.py`、`spider_v2ex.py`、`spider_v2ex_api.py`、`spider_v2ex_cdp.py`）：V2EX 通道未启用，README 与 skills 流程均不依赖
+- 同步更新中英双语 README 的 `scripts/` 目录树
+
+**English**
+- Added `LICENSE` (MIT): the repository previously declared no license and GitHub showed "All rights reserved"; open-source terms are now explicit
+- Removed 5 early V2EX experiment scripts (`probe_wapi.py`, `scrape_v2ex_real.py`, `spider_v2ex.py`, `spider_v2ex_api.py`, `spider_v2ex_cdp.py`): the V2EX channel is not enabled and neither README nor skills depend on them
+- Updated the `scripts/` tree in both README files
+
 ## Docs / 文档 - 2026-10-22
 
 **中文**

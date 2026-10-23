@@ -21,10 +21,8 @@ YD-job/
 │   ├── spider_zhipin.py          # BOSS Zhipin collector via Chrome DevTools Protocol (production)
 │   ├── analyzer_engine.py        # Five-dimension scoring + 26-column Excel report engine (production)
 │   ├── tracker_sync.py           # Application-funnel CRM state machine
-│   ├── probe_wapi.py             # Platform API probe (troubleshooting)
 │   ├── parse_resume.py           # Resume .docx parser (profile source)
-│   ├── inspect_cdp.py            # Port-9222 tab inspector (troubleshooting)
-│   └── scrape_v2ex_real.py       # V2EX CDP probe (V2EX channel reserved, not enabled)
+│   └── inspect_cdp.py            # Port-9222 tab inspector (troubleshooting)
 ├── data/                         # Runtime data (NOT committed: platform auth fields + personal data)
 └── tests/                        # Test locks (run directly with venv python, no pytest needed)
     ├── test_contracts.py         # Config / data schema / contract file existence
